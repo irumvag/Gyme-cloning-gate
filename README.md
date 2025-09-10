@@ -11,6 +11,5 @@ you must have node 19+
     npm install -D
     npm run dev
 ```
----
-### Descrimer 
-⚠All this project are for learning purpose.⚠
+### Disclaimer 
+<center>⚠ All this project are for learning purpose. ⚠</center>
