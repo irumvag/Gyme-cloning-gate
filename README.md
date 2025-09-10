@@ -1,0 +1,16 @@
+# The Gyme training Clonning Gate
+Tailwindcss framework + vite environment
+## you can fork or clone this repo
+You can clone the site 
+```bash
+    git clone https://github.com/irumvag/Gyme-cloning-gate.git
+```
+### how to run
+you must have node 19+
+```bash
+    npm install -D
+    npm run dev
+```
+---
+### Descrimer 
+⚠All this project are for learning purpose.⚠
