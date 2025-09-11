@@ -10,11 +10,12 @@
   </head>
   <body class="animate-fadin">
     <!-- Header section -->
-     <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local ">
+     <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local bg-top ">
       <div class="absolute w-full h-[660px] bg-black opacity-60 z-0"> </div>
      <header class="z-[100] relative lg:px-8 pt-[40px]" >
 
-      <nav class="lg:hidden flex justify-between">
+      <div class="sticky top-0 z-10 left-0">
+      <nav class="lg:hidden flex justify-between ">
         <div class="flex flex-col justify-center pl-10">
          <svg class="cursor-pointer stroke-white" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
          </div>
@@ -23,6 +24,7 @@
       </nav>
       <div class="lg:hidden text-white pt-5">
         <hr class="p-0 m-0 w-[100%]">
+      </div>
       </div>
 
       <nav class="hidden lg:flex  md:space-x-2 ">
@@ -130,7 +132,7 @@
      <!-- main section -->
      <main class="md:mt-10 lg:mt-20 lg:px-20 px-4 ">
       <!-- news -->
-       <div>
+       <div class="hidden md:block">
         <!-- news head -->
          <div class="flex flex-col-reverse  md:flex-row mb-10 ">
           <h1 class="flex-grow text-4xl text-tx">News
@@ -144,11 +146,31 @@
           </div>
          </div>
        </div>
+       <!-- news mobile -->
+        <div class="block md:hidden">
+        <!-- news head -->
+         <div class="mt-10 grid space-y-5">
+
+          <div class="flex-center">
+          <div class="text-tx pb-1 w-60  flex justify-between space-y-2 space-x-10 border-b border-b-gray-300">
+            <p>Topics</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          </div>
+
+          <h1 class="text-3xl text-tx">News
+            <div class="w-15 h-1 mt-3 bg-gray-500"></div>
+          </h1>
+          
+         </div>
+       </div>
+
        <!-- news content -->
         <div class="grid grid-cols-1 md:grid-cols-2 border-x-2 border-x-gray-200">
           <!--image info-->
           <div class="p-4 group border-r border-r-gray-200">
-            <img class="group-hover:scale-100" src="src/img/alzheimers-pollution-teaser_0.jpg" alt="pollution">
+            <img class="group-hover:scale-100 hidden md:block" src="src/img/alzheimers-pollution-teaser_0.jpg" alt="pollution">
+            <img class="md:hidden" src="src/img/opening.png" alt="">
             <div class="flex flex-col items-center p-3 space-y-3">
               <p class="uppercase font-light text-red-800">Health & Medicine</p>
               <h1 class="text-tx text-4xl text-center group-hover:underline"><a href=""> Explosure to air pollution worsens Alzheimer's disease</a></h1>
@@ -159,7 +181,7 @@
             </div>
           </div>
           <!-- news -->
-           <div>
+          <div>
           <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="grid  grid-rows-2 border-r border-r-gray-200">
               <!-- content 1 -->
@@ -209,12 +231,14 @@
               </div>
             </div>
           </div>
+          </div>
+          <p class="text-center text-red-800 font-light text-sm p-8">MORE NEWS VIA PENN TODAY</p>
+          </div>
         </div>
-        <p class="text-center text-red-800 font-light text-sm p-8">MORE NEWS VIA PENN TODAY</p>
      </main>
 
      <!-- learn more section -->
-      <div class="relative lg:mt-20 md:mt-10 md:mb-50 lg:mb-0  bg-[url(/src/img/labdesk.png)] bg-local bg-cover flex-center md:bg-right-top h-[800px]">
+      <div class="relative lg:mt-20 md:mt-10 md:mb-50 lg:mb-0  bg-[url(/src/img/labdesk.png)] bg-local bg-top bg-cover flex-center md:bg-right-top h-[800px]">
         <div class="absolute lg:top-[20%] lg:left-[10%] md:top-[60%] text-white">
           <div class="text-center  lg:w-2/5 md:w-3/4 md:mx-auto lg:mx-0 bg-[#011f5b] px-3 py-3">
             <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
@@ -330,25 +354,41 @@
             </p>
           </div>
           <!-- images section -->
-          <div class="flex-center overflow-x-scroll overflow-hidden space-x-7">
-             <div class="relative">
-              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
-              <div class="absolute absolutes top-x-0 bottom-0 flex">
-                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
-                <div class="bg-red-800 px-4 py-6">
-                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+          <div class="flex-center overflow-hidden space-x-7 relative z-[100]">
+            <div class="flex-center gap-25 scroll-smooth">
+              <!-- image 1 -->
+              <div class="flex-none relative">
+                <img height="546.662" width="820px" src="src/img/research-innovation-singh.jpg" alt="">
+                <div class="absolute top-x-0 bottom-0 flex">
+                  <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
+                  <div class="bg-red-800 px-4 py-6">
+                    <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                  </div>
+                </div>
+              </div>
+              <!-- image 2 -->
+              <div class="flex-none relative">
+                <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
+                <div class="absolute top-x-0 bottom-0 flex">
+                  <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
+                  <div class="bg-red-800 px-4 py-6">
+                    <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                  </div>
+                </div>
+              </div>
+              <!-- image 3 -->
+              <div class="flex-none relative">
+                <img height="546.662px" width="820px" src="src/img/covenant.jpeg" alt="">
+                <div class="absolute top-x-0 bottom-0 flex">
+                  <p class="flex-center text-tx px-4 text-lg bg-white">In Principle & Practice </p>
+                  <div class="bg-red-800 px-4 py-6">
+                    <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                  </div>
                 </div>
               </div>
             </div>
-             <div class="relative">
-              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
-              <div class="absolute absolutes top-x-0 bottom-0 flex">
-                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
-                <div class="bg-red-800 px-4 py-6">
-                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
-                </div>
-              </div>
-            </div>
+            <button class="absolute top-1/2 left-4 -translate-y-1/2 border border-white rounded-full p-4"> <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
+            <button class="absolute top-1/2 right-4 -translate-y-1/2 border border-white rounded-full p-4"> <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </button>
           </div>
         </div>
         <div class="flex-center lg:pt-[400px] md:pt-10 mb-10 space-x-7">
@@ -437,7 +477,7 @@
           </div>
 
           <!-- footer -->
-          <footer class="lg:px-20 md:px-10 z-0 px-3 py-30 relative footer w-[100%] h-max bg-[url(/src/img/footer.png)] bg-center bg-cover text-white">
+          <footer class="lg:px-20 md:px-10 z-0 px-3 pt-30 pb-20 relative footer w-[100%] h-max bg-[url(/src/img/footer.png)] bg-center bg-cover text-white">
             <div class="absolute z-1 top-0 left-0 w-full h-full bg-[#011f5b]/[80%]"></div>
             <div class="flex relative z-10">
               <!-- logo side -->
@@ -483,12 +523,12 @@
               </div>
               </a>
               <div class="flex flex-wrap space-x-6 ">
-                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Disclaimer</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Emergency Services</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Nondiscrimination</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Privacy Policy</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Report Accessibility Issues and Get Help</div>
-                <div class="uppercase md:text-xs lg:text-lg font-bold uhover cursor-pointer">Report Copyright Infringement</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs  font-bold mb-2 flex-center uhover cursor-pointer">Disclaimer</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs  font-bold mb-2 flex-center uhover cursor-pointer">Emergency Services</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs  font-bold mb-2 flex-center uhover cursor-pointer">Nondiscrimination</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs  font-bold mb-2 flex-center uhover cursor-pointer">Privacy Policy</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs  font-bold mb-2 flex-center uhover cursor-pointer">Report Accessibility Issues and Get Help</div>
+                <div class="uppercase md:text-xs  font-bold uhover cursor-pointer">Report Copyright Infringement</div>
               </div>
             </div>
           </footer>
