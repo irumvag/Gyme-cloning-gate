@@ -88,7 +88,7 @@
             <button class="p-4 bg-red-800 hover:bg-red-900 text-white cursor-pointer">GIVE TO PENN</button>
           </div>
           <hr style="color:#fff" class="relative left-[30px]">
-          <ul class="py-5 flex-grow flex-left uppercase text-white space-x-5 font-semibold">
+          <ul class="py-5 hidden flex-grow lg:flex-left uppercase text-white space-x-5 font-semibold">
             <li class="flex-center  cursor-pointer">academics <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
             <li class="flex-center cursor-pointer"><svg class="stroke-gray-900"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
             <li class="flex-center cursor-pointer">Admission & aid</li>
@@ -104,12 +104,12 @@
         </div>
       </nav>
       <!-- hero section -->
-       <div class="group w-1/2 relative transform translate-y-45 hover:transform duration-1000 hover:translate-y-20 text-white px-10 space-y-5 cursor-pointer">
+       <div class="group w-full  lg:w-1/2 relative transform translate-y-20  lg:translate-y-45 lg:hover:transform lg:duration-1000 lg:hover:translate-y-20 text-white px-10 space-y-5 cursor-pointer">
         <p class="font-bold text-1xl uppercase">Health & Medicine</p>
         <h1 class="text-4xl pb-0 mb-0">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
           <div class="w-15 h-1 mt-3 bg-[#55413d] "></div>
         </h1>
-        <p class="invisible group-hover:visible">Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care</p>
+        <p class="visible lg:invisible lg:group-hover:visible">Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care</p>
       </div>
      </header>
      </div>
@@ -119,12 +119,12 @@
       <!-- news -->
        <div>
         <!-- news head -->
-         <div class="flex mb-10">
+         <div class="flex flex-col-reverse lg:flex-row mb-10 ">
           <h1 class="flex-grow text-4xl text-tx">News
             <div class="w-15 h-1 mt-3 bg-gray-500"></div>
           </h1>
           <div>
-          <div class="text-tx pb-5 flex justify-between space-x-10 border-b border-b-gray-500">
+          <div class="text-tx pb-5 w-30 lg:w-auto  flex lg:justify-between space-y-2 lg:space-x-10 border-b border-b-gray-500">
             <p>Topics</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
           </div>
@@ -132,7 +132,7 @@
          </div>
        </div>
        <!-- news content -->
-        <div class="grid grid-cols-2 border-x-2 border-x-gray-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 border-x-2 border-x-gray-200">
           <!--image info-->
           <div class="p-4 group border-r border-r-gray-200">
             <img class="group-hover:scale-100" src="src/img/alzheimers-pollution-teaser_0.jpg" alt="pollution">
@@ -147,12 +147,12 @@
           </div>
           <!-- news -->
            <div>
-          <div class="grid grid-cols-2">
-            <div class="grid grid-rows-2 border-r border-r-gray-200">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="grid  grid-rows-2 border-r border-r-gray-200">
               <!-- content 1 -->
                <div class="border-b border-b-gray-200 mx-2">
               <div class="p-4 group ">
-                <img class="group-hover:scale-100" src="src/img/teacher.png" alt="pollution">
+                <img class="group-hover:scale-100 hidden lg:block" src="src/img/teacher.png" alt="pollution">
                 <div class="flex flex-col items-center p-3 space-y-3">
                 <p class="uppercase font-light text-red-800">Health & Medicine</p>
                 <h1 class="text-tx text-1xl text-center group-hover:underline"><a href=""> White coat ceremonies: A professional milestone</a></h1>
@@ -163,7 +163,7 @@
               <!-- content 2 -->
                <div class="border-b border-b-gray-200 mx-2">
                <div class="p-4 group ">
-                  <img class="group-hover:scale-100" src="src/img/nature.png" alt="pollution">
+                  <img class="group-hover:scale-100 hidden lg:block" src="src/img/nature.png" alt="pollution">
                   <div class="flex flex-col items-center p-3 space-y-3">
                   <p class="uppercase font-light text-red-800">Natural Sciences</p>
                   <h1 class="text-tx text-xl text-center group-hover:underline"><a href="">Penn physicist Charles Kane to receive the 2026 Lorentz Medal</a></h1>
@@ -176,7 +176,7 @@
                <!-- content 1 -->
               <div class="border-b border-b-gray-200 mx-2">
               <div class="p-4 group  ">
-                <img class="group-hover:scale-100" src="src/img/techno.png" alt="pollution">
+                <img class="group-hover:scale-100 hidden lg:block" src="src/img/techno.png" alt="pollution">
                 <div class="flex flex-col items-center p-3 space-y-3">
                 <p class="uppercase font-light text-red-800">Technology</p>
                 <h1 class="text-tx text-1xl text-center group-hover:underline"><a href=""> A new way to guide light, undeterred</a></h1>
@@ -187,7 +187,7 @@
               <!-- content 2 -->
                <div class="border-b border-b-gray-200 mx-2">
                <div class="p-4 group ">
-                  <img class="group-hover:scale-100" src="src/img/medical.png" alt="pollution">
+                  <img class="group-hover:scale-100 hidden lg:block" src="src/img/medical.png" alt="pollution">
                   <div class="flex flex-col items-center p-3 space-y-3">
                   <p class="uppercase font-light text-red-800">Health & Medicine</p>
                   <h1 class="text-tx text-1xl text-center group-hover:underline"><a href="">Pioneering strategy may keep breast cancer from coming back</a></h1>
@@ -307,7 +307,7 @@
         </div>
 
         <!-- sliding image -->
-        <div class="relative mt-20 bg-[url(/src/img/bgimage.png)] h-[554.263px]">
+        <div class="relative mt-20  bg-[url(/src/img/bgimage.png)] h-[554.263px]">
           <!-- text -->
           <div class="pt-30 pb-20 text-white text-center flex flex-col items-center justify-center space-y-6">
             <h1 class="text-5xl">Penn Priorities</h1>
@@ -317,17 +317,48 @@
             </p>
           </div>
           <!-- images section -->
-          <div class="absolute top-x-0 -bottom-20">
+          <div class="flex-center overflow-x-scroll space-x-7">
             <div class="relative">
-              <img src="" alt="">
-              <div class="absolute flex">
-                <p class="flex-center">Penn Forward</p>
-                <div class="bg-red-800 p-4">
-
+              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
+              <div class="absolute absolutes top-x-0 bottom-0 flex">
+                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
+                <div class="bg-red-800 px-4 py-6">
+                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+              </div>
+            </div>
+             <div class="relative">
+              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
+              <div class="absolute absolutes top-x-0 bottom-0 flex">
+                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
+                <div class="bg-red-800 px-4 py-6">
+                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+              </div>
+            </div>
+             <div class="relative">
+              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
+              <div class="absolute absolutes top-x-0 bottom-0 flex">
+                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
+                <div class="bg-red-800 px-4 py-6">
+                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="flex-center pt-[400px] mb-10 space-x-7">
+          <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+          <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+          <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+          <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+          <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+          <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+        </div>
+
+        <div class="flex flex-col justify-center ">
+          <h1>Stay Connected</h1>
+          <div class="w-10 h-1 bg-gray-00 "></div>
         </div>
     <script type="module" src="/src/main.js"></script>
   </body>
