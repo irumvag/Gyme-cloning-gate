@@ -1,9 +1,11 @@
 @import "tailwindcss";
-@import '@fontsource-variable/open-sans';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base{
+    body{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+    }
 
 }
 
@@ -11,7 +13,20 @@
     .flex-center{
         @apply flex justify-center items-center;
     }
+    .flex-left{
+        @apply flex justify-end;
+    }
 }
 @theme{
-
+    --color-whites:#fff;
+    --animate-fadin:ease-in-out 1s;
+    @keyframes fadin {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
 }
