@@ -26,6 +26,9 @@
     .none::-webkit-scrollbar{
         display: none;
     }
+    .uhover{
+        @apply hover:underline;
+    }
 }
 @theme{
     --color-whites:#fff;
