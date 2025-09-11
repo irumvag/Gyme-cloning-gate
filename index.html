@@ -9,9 +9,10 @@
   </head>
   <body>
     <!-- Header section -->
-     <div class="relative  bg-black ">
-     <header class="absolute top-0 container px-4 md:px-8 pt-[40px] bg-[url(/src/img/hero.png)] bg-cover bg-local mask-center" >
-      <nav class="flex md:space-x-2">
+     <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local">
+      <div class="absolute w-full h-[660px] bg-black opacity-60 z-0"> </div>
+     <header class="z-[100] relative container px-4 md:px-8 pt-[40px]" >
+      <nav class="flex md:space-x-2 ">
         <!-- logo -->
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 88" width="273" height="88">
@@ -81,28 +82,53 @@
         </a>
         <!--nav links  -->
         <div class="flex-grow flex flex-col">
-          <div class="flex-left space-x-2 items-center text-white font-semibold border-b border-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
-            <p class="pl-10 flex-center space-x-1">Resources <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span></p>
-            <button class="p-4 bg-red-500 text-white ">GIVE TO PENN</button>
+          <div class="flex-left space-x-2 items-center text-white font-semibold ">
+            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            <p class="pl-10 flex-center space-x-1 cursor-pointer">Resources <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span></p>
+            <button class="p-4 bg-red-800 hover:bg-red-900 text-white cursor-pointer">GIVE TO PENN</button>
           </div>
+          <hr style="color:#fff" class="relative left-[40px]">
           <ul class="py-5 flex-grow flex-left uppercase text-white space-x-5 font-semibold">
-            <li class="flex-center">academics <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
-            <li class="flex-center"><svg class="stroke-gray-900"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
-            <li class="flex-center">Admission & aid</li>
-            <li class="flex-center"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
-            <li class="flex-center">athletics</li>
-            <li class="flex-center"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
-            <li class="flex-center space-x-1">research & innovation<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
-            <li class="flex-center"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
-            <li class="flex-center space-x-1">life at penn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
-            <li class="flex-center"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
-            <li class="flex-center space-x-1">about<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
+            <li class="flex-center  cursor-pointer">academics <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
+            <li class="flex-center cursor-pointer"><svg class="stroke-gray-900"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
+            <li class="flex-center cursor-pointer">Admission & aid</li>
+            <li class="flex-center cursor-pointer"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
+            <li class="flex-center cursor-pointer">athletics</li>
+            <li class="flex-center cursor-pointer"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
+            <li class="flex-center cursor-pointer space-x-1">research & innovation<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
+            <li class="flex-center cursor-pointer"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
+            <li class="flex-center cursor-pointer space-x-1">life at penn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
+            <li class="flex-center cursor-pointer"><svg class="stroke-gray-900" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
+            <li class="flex-center cursor-pointer space-x-1">about<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
           </ul>
         </div>
       </nav>
+      <!-- hero section -->
+       <div class="group w-1/2 relative transform translate-y-45 hover:transform duration-1000 hover:translate-y-20 text-white px-10 space-y-5 cursor-pointer">
+        <p class="font-bold text-1xl uppercase">Health & Medicine</p>
+        <h1 class="text-4xl pb-0 mb-0">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
+          <div class="w-15 h-1 mt-3 bg-[#55413d] "></div>
+        </h1>
+        <p class="invisible group-hover:visible">Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care</p>
+      </div>
      </header>
      </div>
+     <!-- main section -->
+     <main class="container mt-20 px-4 md:px-12">
+      <!-- news -->
+       <div>
+        <!-- news head -->
+         <div class="flex mb-10">
+          <h1 class="flex-grow text-4xl text-tx">News
+            <div class="w-15 h-1 mt-3 bg-gray-500"></div>
+          </h1>
+          <div class="p-4 text-tx flex justify-between">
+            <p>Topics</p>
+            
+          </div>
+         </div>
+       </div>
+     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
