@@ -10,10 +10,22 @@
   </head>
   <body class="animate-fadin">
     <!-- Header section -->
-     <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local">
+     <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local ">
       <div class="absolute w-full h-[660px] bg-black opacity-60 z-0"> </div>
-     <header class="z-[100] relative container px-4 md:px-8 pt-[40px]" >
-      <nav class="flex md:space-x-2 ">
+     <header class="z-[100] relative lg:px-8 pt-[40px]" >
+
+      <nav class="lg:hidden flex justify-between">
+        <div class="flex flex-col justify-center pl-10">
+         <svg class="cursor-pointer stroke-white" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+         </div>
+         <img src="src/img/logo.png" class="h-15 w-50" alt="">
+         <button class="flex flex-col justify-center pr-10"><svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg> </button>
+      </nav>
+      <div class="lg:hidden text-white pt-5">
+        <hr class="p-0 m-0 w-[100%]">
+      </div>
+
+      <nav class="hidden lg:flex  md:space-x-2 ">
         <!-- logo -->
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 88" width="273" height="88">
@@ -89,7 +101,7 @@
             <button class="p-4 bg-red-800 hover:bg-red-900 text-white cursor-pointer">GIVE TO PENN</button>
           </div>
           <hr style="color:#fff" class="relative left-[30px]">
-          <ul class="py-5 hidden flex-grow lg:flex-left uppercase text-white space-x-5 font-semibold">
+          <ul class="py-5  flex-grow flex-left uppercase text-white space-x-5 font-semibold">
             <li class="flex-center  cursor-pointer">academics <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
             <li class="flex-center cursor-pointer"><svg class="stroke-gray-900"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
             <li class="flex-center cursor-pointer">Admission & aid</li>
@@ -105,7 +117,7 @@
         </div>
       </nav>
       <!-- hero section -->
-       <div class="group w-full  lg:w-1/2 relative transform translate-y-20  lg:translate-y-45 lg:hover:transform lg:duration-1000 lg:hover:translate-y-20 text-white px-10 space-y-5 cursor-pointer">
+       <div class="group w-full  lg:w-1/2 relative transform translate-y-20  md:translate-y-45 lg:hover:transform lg:duration-1000 lg:hover:translate-y-20 text-white px-10 space-y-5 cursor-pointer">
         <p class="font-bold text-1xl uppercase">Health & Medicine</p>
         <h1 class="text-4xl pb-0 mb-0">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
           <div class="w-15 h-1 mt-3 bg-[#55413d] "></div>
@@ -116,16 +128,16 @@
      </div>
 
      <!-- main section -->
-     <main class="container mt-20 px-4 md:px-12">
+     <main class="md:mt-10 lg:mt-20 lg:px-20 px-4 ">
       <!-- news -->
        <div>
         <!-- news head -->
-         <div class="flex flex-col-reverse lg:flex-row mb-10 ">
+         <div class="flex flex-col-reverse  md:flex-row mb-10 ">
           <h1 class="flex-grow text-4xl text-tx">News
             <div class="w-15 h-1 mt-3 bg-gray-500"></div>
           </h1>
           <div>
-          <div class="text-tx pb-5 w-30 lg:w-auto  flex lg:justify-between space-y-2 lg:space-x-10 border-b border-b-gray-500">
+          <div class="text-tx pb-5 w-30 lg:w-auto  flex md:justify-between space-y-2 md:space-x-10 border-b border-b-gray-500">
             <p>Topics</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
           </div>
@@ -133,7 +145,7 @@
          </div>
        </div>
        <!-- news content -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 border-x-2 border-x-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 border-x-2 border-x-gray-200">
           <!--image info-->
           <div class="p-4 group border-r border-r-gray-200">
             <img class="group-hover:scale-100" src="src/img/alzheimers-pollution-teaser_0.jpg" alt="pollution">
@@ -148,12 +160,12 @@
           </div>
           <!-- news -->
            <div>
-          <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="grid  grid-rows-2 border-r border-r-gray-200">
               <!-- content 1 -->
-               <div class="border-b border-b-gray-200 mx-2">
+               <div class="border-b border-b-gray-200 lg:mx-2 md:mx-1">
               <div class="p-4 group ">
-                <img class="group-hover:scale-100 hidden lg:block" src="src/img/teacher.png" alt="pollution">
+                <img class="group-hover:scale-100 hidden md:block" src="src/img/teacher.png" alt="pollution">
                 <div class="flex flex-col items-center p-3 space-y-3">
                 <p class="uppercase font-light text-red-800">Health & Medicine</p>
                 <h1 class="text-tx text-1xl text-center group-hover:underline"><a href=""> White coat ceremonies: A professional milestone</a></h1>
@@ -162,9 +174,9 @@
                </div>
                </div>
               <!-- content 2 -->
-               <div class="border-b border-b-gray-200 mx-2">
+               <div class="border-b border-b-gray-200 lg:mx-2 md:mx-1">
                <div class="p-4 group ">
-                  <img class="group-hover:scale-100 hidden lg:block" src="src/img/nature.png" alt="pollution">
+                  <img class="group-hover:scale-100 hidden md:block" src="src/img/nature.png" alt="pollution">
                   <div class="flex flex-col items-center p-3 space-y-3">
                   <p class="uppercase font-light text-red-800">Natural Sciences</p>
                   <h1 class="text-tx text-xl text-center group-hover:underline"><a href="">Penn physicist Charles Kane to receive the 2026 Lorentz Medal</a></h1>
@@ -175,9 +187,9 @@
             </div>
             <div class="grid grid-rows-2">
                <!-- content 1 -->
-              <div class="border-b border-b-gray-200 mx-2">
+              <div class="border-b border-b-gray-200 lg:mx-2 md:mx-1">
               <div class="p-4 group  ">
-                <img class="group-hover:scale-100 hidden lg:block" src="src/img/techno.png" alt="pollution">
+                <img class="group-hover:scale-100 hidden md:block" src="src/img/techno.png" alt="pollution">
                 <div class="flex flex-col items-center p-3 space-y-3">
                 <p class="uppercase font-light text-red-800">Technology</p>
                 <h1 class="text-tx text-1xl text-center group-hover:underline"><a href=""> A new way to guide light, undeterred</a></h1>
@@ -186,9 +198,9 @@
               </div>
               </div>
               <!-- content 2 -->
-               <div class="border-b border-b-gray-200 mx-2">
+               <div class="border-b border-b-gray-200 lg:mx-2 md:mx-1">
                <div class="p-4 group ">
-                  <img class="group-hover:scale-100 hidden lg:block" src="src/img/medical.png" alt="pollution">
+                  <img class="group-hover:scale-100 hidden md:block" src="src/img/medical.png" alt="pollution">
                   <div class="flex flex-col items-center p-3 space-y-3">
                   <p class="uppercase font-light text-red-800">Health & Medicine</p>
                   <h1 class="text-tx text-1xl text-center group-hover:underline"><a href="">Pioneering strategy may keep breast cancer from coming back</a></h1>
@@ -202,9 +214,9 @@
      </main>
 
      <!-- learn more section -->
-      <div class="relative mt-20 bg-[url(/src/img/labdesk.png)] bg-local bg-cover flex-center h-[800px]">
-        <div class="absolute top-[20%] left-[10%] text-white">
-          <div class="text-center  w-2/5  bg-[#011f5b] px-3 py-3">
+      <div class="relative lg:mt-20 md:mt-10 md:mb-50 lg:mb-0  bg-[url(/src/img/labdesk.png)] bg-local bg-cover flex-center md:bg-right-top h-[800px]">
+        <div class="absolute lg:top-[20%] lg:left-[10%] md:top-[60%] text-white">
+          <div class="text-center  lg:w-2/5 md:w-3/4 md:mx-auto lg:mx-0 bg-[#011f5b] px-3 py-3">
             <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
             <p>Health & Medicine</p>
             <h1 class="text-4xl">Keeping food safe and animals healthy</h1>
@@ -219,12 +231,12 @@
       </div>
 
       <!-- Upcomming Event -->
-       <div class="mt-20 md:px-20 px-4">
-        <h1 class="text-5xl text-tx">Upcoming Events</h1>
+       <div class="lg:mt-20 md:mt-10 lg:px-20 md:10 px-4">
+        <h1 class="lg:text-5xl md:text-3xl  text-tx">Upcoming Events</h1>
         <div class="w-10 h-1 mt-3 bg-gray-500"></div>
-        <div class="grid grid-cols-3 mt-10">
+        <div class="grid md:overflow-x-scroll lg:overflow-hidden md:grid-cols-3 mt-10">
           <!-- column 1 -->
-          <div class="b-r p-4">
+          <div class="b-r py-4 pr-4">
             <div class="relative peer mb-5">
               <img src="src/img/algorithm-health-teaser.jpg" alt="special event">
               <!-- calender -->
@@ -282,25 +294,25 @@
        </div>
 
        <!-- updates -->
-        <div class="mt-10 md:px-20 px-4 grid grid-cols-2">
+        <div class="lg:mt-10 md:mt-10 lg:px-20 md:px-10 px-4 grid grid-cols-2">
           <!-- col1 -->
-          <div class=" text-white">
+          <div class=" text-white md:w-full">
           <div class="text-center mx-2  bg-[#011f5b] px-3 py-3">
             <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
             <h1 class="text-4xl">Federal Government Updates</h1>
             <div class="w-5 h-1 mt-3 bg-gray-500"></div>
-            <p class="tracking-wider px-5">Penn is closely monitoring federal policy changes affecting institutions of higher education and academic health systems.</p>
+            <p class="lg:tracking-wider md:tracking-wider px-5">Penn is closely monitoring federal policy changes affecting institutions of higher education and academic health systems.</p>
             <button class="uppercase px-10 py-4 border border-blue-900 rounded-full duration-700 hover:bg-white hover:text-red-800">Learn more</button>
           </div>
           </div>
           </div>
           <!-- col2 -->
-          <div class=" text-white">
+          <div class=" text-white md:w-full">
           <div class="text-center  mx-2 bg-[#011f5b] px-3 py-3">
             <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
             <h1 class="text-4xl">Title IX Compliance in Athletics</h1>
             <div class="w-5 h-1 mt-3 bg-gray-500"></div>
-            <p class="tracking-widest">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights</p>
+            <p class="lg:tracking-widest md:tracking-normal">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights</p>
             <button class="uppercase px-10 py-4 border border-blue-900 rounded-full duration-700 hover:bg-white hover:text-red-800">Learn more</button>
           </div>
           </div>
@@ -308,7 +320,7 @@
         </div>
 
         <!-- sliding image -->
-        <div class="relative mt-20  bg-[url(/src/img/bgimage.png)] h-[554.263px]">
+        <div class="relative mt-20  bg-[url(/src/img/bgimage.png)] lg:h-[554.263px] h-full md:pb-20">
           <!-- text -->
           <div class="pt-30 pb-20 text-white text-center flex flex-col items-center justify-center space-y-6">
             <h1 class="text-5xl">Penn Priorities</h1>
@@ -339,7 +351,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-center pt-[400px] mb-10 space-x-7">
+        <div class="flex-center lg:pt-[400px] md:pt-10 mb-10 space-x-7">
           <div class="w-3 h-3 bg-red-400 rounded-full"></div>
           <div class="w-2 h-2 bg-red-600 rounded-full"></div>
           <div class="w-2 h-2 bg-red-600 rounded-full"></div>
@@ -355,11 +367,11 @@
         </div>
 
         <!-- social media contect -->
-        <div class="md:px-20 px-4 grid grid-cols-1 lg:grid-cols-3 lg:space-x-4">
+        <div class="lg:px-20 md:px-5 px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:space-x-4">
 
-          <div class="relative h-[409px] w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
-            <img src="src/img/sheerpool-sq.png" class="absolute z-0 top-0 left-0 group-hover:z-0" alt="">
-            <div class="absolute top-0 left-0 z-10 h-[409px] w-[408px] group-hover:bg-red-500/70"></div>
+          <div class="relative lg:h-[409px] lg:w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
+            <img src="src/img/sheerpool-sq.png" class="absolute z-0 top-0 left-0 group-hover:z-0 h-full w-full" alt="">
+            <div class="absolute top-0 left-0 z-10 lg:h-[409px] lg:w-[408px] h-full w-full group-hover:bg-red-500/70"></div>
             <div class="relative z-10 flex flex-col  justify-start space-y-3 invisible group-hover:visible">
               <p>A wideshot of the Sheer Pool on the University of Pennsylvania's campus from the top of the fan seating.
                 Sheerr Pool at the Pottruck Center reopened this summer after a yearlong renovation. 
@@ -373,7 +385,7 @@
             </div>
             </div>
           </div>
-          <div class="flex flex-col justify-start space-y-6 h-[409px] w-[408px] bg-tx/95 text-white px-10 py-20">
+          <div class="flex flex-col justify-start space-y-6 lg:h-[409px] lg:w-[408px] bg-tx/95 text-white px-10 py-20">
             <p>
               When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at @PennVetSchool, knew something was off. What followed was a swift, coordinated response from a veterinary team whose skill and care gave the rescue dog a second chance.
             </p>
@@ -384,9 +396,9 @@
               <div class="flex-center">@UOFPENN</div> 
             </div>
           </div>
-           <div class="relative h-[409px] w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
+           <div class="relative md:hidden lg:flex  lg:h-[409px] lg:w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
             <img src="src/img/youmakecampuswhole-sq.png" class="absolute z-0 top-0 left-0 group-hover:z-0" alt="">
-            <div class="absolute top-0 left-0 z-10 h-[409px] w-[408px] group-hover:bg-red-500/70"></div>
+            <div class="absolute top-0 left-0 z-10 lg:h-[409px] lg:w-[408px] group-hover:bg-red-500/70"></div>
             <div class="relative z-10 flex flex-col  space-y-3 invisible group-hover:visible">
               <p>Good to have you back.</p>
               <div class="flex space-x-3" >
@@ -398,9 +410,17 @@
           </div>
         </div>
         </div>
+        <!-- scroll -->
+        <div class="flex-center">
+          <div class="md:flex justify-center lg:hidden hidden md:pt-10 mb-10 space-x-7">
+            <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+            <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+            <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+          </div>
+          </div>
 
         <!-- social media -->
-         <ul class="flex-center space-x-7 mt-10 text-tx mb-30">
+         <ul class="flex-center space-x-7 mt-10 text-tx lg:mb-30 md:mb-10">
           <li class="cursor-pointer p-2 border border-gray-300 rounded-full w-10 h-10 flex-center"><i class="fa-brands fa-instagram"></i></li>
           <li class="cursor-pointer p-2 border border-gray-300 rounded-full w-10 h-10 flex-center"><i class="fa-brands fa-square-facebook"></i></li>
           <li class="cursor-pointer p-2 border border-gray-300 rounded-full w-10 h-10 flex-center"><i class="fa-brands fa-threads"></i></li>
@@ -410,20 +430,20 @@
          </ul>
 
          <!-- opportinity -->
-          <div class="md:px-20 px-4 bg-[#011f5b] flex flex-col items-center text-white space-y-9 py-30">
+          <div class="lg:px-20  px-3 bg-[#011f5b] flex flex-col items-center text-white space-y-9 py-30">
             <h1 class="text-4xl">Equal Opportunity and Nondiscrimination at Penn</h1>
             <p class="tracking-widest leading-7 px-5 text-center">The University of Pennsylvania seeks talented students, faculty, and staff with a wide variety of backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate on the basis of race, color, sex, sexual orientation, religion, creed, national origin (including shared ancestry or ethnic characteristics), citizenship status, age, disability, veteran status or any other class protected under applicable federal, state, or local law in the administration of its admissions, financial aid, educational or athletic programs, or other University-administered programs or in its employment practices. Questions or complaints regarding this policy should be directed to the executive director of the Office of Equal Opportunity Programs; Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA 19104-6106; or (215) 898-6993.</p>
             <button class="uppercase px-10 py-4 border border-blue-900 rounded-full duration-700 hover:bg-white hover:text-red-800">Nondiscrimination Statement</button>
           </div>
 
           <!-- footer -->
-          <footer class="md:px-20 z-0 px-4 py-30 relative footer w-[100%] h-screen bg-[url(/src/img/footer.png)] bg-center bg-cover text-white">
-            <div class="absolute z-1 top-0 left-0 w-full h-screen bg-[#011f5b]/[73%]"></div>
-            <div class="flex flex-wrap relative z-10">
+          <footer class="lg:px-20 md:px-10 z-0 px-3 py-30 relative footer w-[100%] h-max bg-[url(/src/img/footer.png)] bg-center bg-cover text-white">
+            <div class="absolute z-1 top-0 left-0 w-full h-full bg-[#011f5b]/[80%]"></div>
+            <div class="flex relative z-10">
               <!-- logo side -->
               <div class="flex-grow flex flex-col space-y-4">
                 <div>
-                  <img src="src/img/logo.png" alt="">
+                  <img class="md:h-20 md:w-40" src="src/img/logo.png" alt="">
                 </div>
                 <div>Philadelphia, PA 19104</div>
                 <div>Telephone: <span class="text-white/20 hover:underline">(215) 898-5000</span></div>
@@ -463,12 +483,12 @@
               </div>
               </a>
               <div class="flex flex-wrap space-x-6 ">
-                <div class="pr-6 border-r-2 border-gray-500 uppercase text-xs font-bold mb-2 flex-center uhover cursor-pointer">Disclaimer</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase text-xs font-bold mb-2 flex-center uhover cursor-pointer">Emergency Services</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase text-xs font-bold mb-2 flex-center uhover cursor-pointer">Nondiscrimination</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase text-xs font-bold mb-2 flex-center uhover cursor-pointer">Privacy Policy</div>
-                <div class="pr-6 border-r-2 border-gray-500 uppercase text-xs font-bold mb-2 flex-center uhover cursor-pointer">Report Accessibility Issues and Get Help</div>
-                <div class="uppercase text-xs font-bold uhover cursor-pointer">Report Copyright Infringement</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Disclaimer</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Emergency Services</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Nondiscrimination</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Privacy Policy</div>
+                <div class="pr-6 border-r-2 border-gray-500 uppercase md:text-xs lg:text-lg font-bold mb-2 flex-center uhover cursor-pointer">Report Accessibility Issues and Get Help</div>
+                <div class="uppercase md:text-xs lg:text-lg font-bold uhover cursor-pointer">Report Copyright Infringement</div>
               </div>
             </div>
           </footer>
