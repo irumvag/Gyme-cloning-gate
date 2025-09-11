@@ -23,6 +23,9 @@
     .b-r{
         @apply border-r border-r-gray-200;
     }
+    .none::-webkit-scrollbar{
+        display: none;
+    }
 }
 @theme{
     --color-whites:#fff;

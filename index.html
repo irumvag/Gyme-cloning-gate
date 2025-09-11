@@ -7,7 +7,7 @@
     <title>Clonning gate</title>
     <link rel="stylesheet" href="src/style.css">
   </head>
-  <body class="animate-fadin overflow-x-hidden">
+  <body class="animate-fadin">
     <!-- Header section -->
      <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local">
       <div class="absolute w-full h-[660px] bg-black opacity-60 z-0"> </div>
@@ -201,7 +201,7 @@
      </main>
 
      <!-- learn more section -->
-      <div class="relative mt-20 bg-[url(/src/img/labdesk.png)] bg-local w-screen flex-center h-[800px]">
+      <div class="relative mt-20 bg-[url(/src/img/labdesk.png)] bg-local bg-cover flex-center h-[800px]">
         <div class="absolute top-[20%] left-[10%] text-white">
           <div class="text-center  w-2/5  bg-[#011f5b] px-3 py-3">
             <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
@@ -317,16 +317,7 @@
             </p>
           </div>
           <!-- images section -->
-          <div class="flex-center overflow-x-scroll space-x-7">
-            <div class="relative">
-              <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
-              <div class="absolute absolutes top-x-0 bottom-0 flex">
-                <p class="flex-center text-tx px-4 text-lg bg-white">Penn Forward</p>
-                <div class="bg-red-800 px-4 py-6">
-                  <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
-                </div>
-              </div>
-            </div>
+          <div class="flex-center overflow-x-scroll overflow-hidden space-x-7">
              <div class="relative">
               <img height="546.662" width="820px" src="src/img/P-101788-Master-V1-117.jpg" alt="">
               <div class="absolute absolutes top-x-0 bottom-0 flex">
@@ -356,10 +347,66 @@
           <div class="w-2 h-2 bg-red-600 rounded-full"></div>
         </div>
 
-        <div class="flex flex-col justify-center ">
-          <h1>Stay Connected</h1>
-          <div class="w-10 h-1 bg-gray-00 "></div>
+        <!-- stay connected -->
+        <div class="flex flex-col justify-center items-center  space-y-4 mt-20 mb-10">
+          <h1 class="text-tx text-5xl ">Stay Connected</h1>
+          <div class="w-10 h-1 bg-gray-500 "></div>
         </div>
+
+        <!-- social media contect -->
+        <div class="md:px-20 px-4 grid grid-cols-1 lg:grid-cols-3 lg:space-x-4">
+
+          <div class="relative h-[409px] w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
+            <img src="src/img/sheerpool-sq.png" class="absolute z-0 top-0 left-0 group-hover:z-0" alt="">
+            <div class="absolute top-0 left-0 z-10 h-[409px] w-[408px] group-hover:bg-red-500/70"></div>
+            <div class="relative z-10 flex flex-col  justify-start space-y-3 invisible group-hover:visible">
+              <p>A wideshot of the Sheer Pool on the University of Pennsylvania's campus from the top of the fan seating.
+                Sheerr Pool at the Pottruck Center reopened this summer after a yearlong renovation. 
+                The new features and improvements have made the pool safer and more accessible.
+                 Swim lessons and other programming have now returned with the fall semester.</p>
+              <div class="flex space-x-3" >
+              <div class="p-4 bg-gray-600 rounded-full w-10 h-10 flex-center  ">
+                X
+              </div>
+              <div class="flex-center">@UOFPENN</div> 
+            </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-start space-y-6 h-[409px] w-[408px] bg-tx/95 text-white px-10 py-20">
+            <p>
+              When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at @PennVetSchool, knew something was off. What followed was a swift, coordinated response from a veterinary team whose skill and care gave the rescue dog a second chance.
+            </p>
+            <div class="flex space-x-3" >
+              <div class="p-4 bg-gray-600 rounded-full w-10 h-10 flex-center  ">
+                X
+              </div>
+              <div class="flex-center">@UOFPENN</div> 
+            </div>
+          </div>
+           <div class="relative h-[409px] w-[408px] flex items-center text-white px-10 py-20 group  backdrop-blur" >
+            <img src="src/img/youmakecampuswhole-sq.png" class="absolute z-0 top-0 left-0 group-hover:z-0" alt="">
+            <div class="absolute top-0 left-0 z-10 h-[409px] w-[408px] group-hover:bg-red-500/70"></div>
+            <div class="relative z-10 flex flex-col  space-y-3 invisible group-hover:visible">
+              <p>Good to have you back.</p>
+              <div class="flex space-x-3" >
+              <div class="p-4 bg-gray-600 rounded-full w-10 h-10 flex-center  ">
+                X
+              </div>
+              <div class="flex-center">@UOFPENN</div> 
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- social media -->
+         <ul class="flex-center space-x-3 mt-10">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+         </ul>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
