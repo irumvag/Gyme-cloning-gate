@@ -7,7 +7,7 @@
     <title>Clonning gate</title>
     <link rel="stylesheet" href="src/style.css">
   </head>
-  <body>
+  <body class="animate-fadin overflow-x-hidden">
     <!-- Header section -->
      <div class="relative h-[660px] bg-[url(/src/img/hero.png)] bg-cover bg-local">
       <div class="absolute w-full h-[660px] bg-black opacity-60 z-0"> </div>
@@ -87,7 +87,7 @@
             <p class="pl-10 flex-center space-x-1 cursor-pointer">Resources <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span></p>
             <button class="p-4 bg-red-800 hover:bg-red-900 text-white cursor-pointer">GIVE TO PENN</button>
           </div>
-          <hr style="color:#fff" class="relative left-[40px]">
+          <hr style="color:#fff" class="relative left-[30px]">
           <ul class="py-5 flex-grow flex-left uppercase text-white space-x-5 font-semibold">
             <li class="flex-center  cursor-pointer">academics <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></li>
             <li class="flex-center cursor-pointer"><svg class="stroke-gray-900"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-slash-icon lucide-slash"><path d="M22 2 2 22"/></svg></li>
@@ -196,8 +196,41 @@
             </div>
           </div>
         </div>
-        <p class="text-center text-red-800 font-semibold text-sm p-4">MORE NEWS VIA PENN TODAY</p>
+        <p class="text-center text-red-800 font-light text-sm p-8">MORE NEWS VIA PENN TODAY</p>
      </main>
+     <!-- learn more section -->
+      <div class="relative mt-20 bg-[url(/src/img/labdesk.png)] bg-local w-screen flex-center h-[800px]">
+        <div class="absolute top-[20%] left-[10%] text-white">
+          <div class="text-center  w-2/5  bg-[#011f5b] px-3 py-3">
+            <div class="border border-blue-900 flex flex-col justify-center items-center px-4 py-10 space-y-9">
+            <p>Health & Medicine</p>
+            <h1 class="text-4xl">Keeping food safe and animals healthy</h1>
+            <div class="w-5 h-1 mt-3 bg-gray-500"></div>
+            <p class="tracking-wider px-5">As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), 
+              Penn Vet’s New Bolton Center helps to protect animals and humans from health 
+              threats and minimize agricultural economic loss.</p>
+            <button class="uppercase px-10 py-4 border border-blue-900 rounded-full duration-700 hover:bg-white hover:text-red-800">Learn more</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcomming Event -->
+       <div class="my-20 md:px-20 px-4">
+        <h1 class="text-5xl text-tx">Upcoming Events</h1>
+        <div class="w-10 h-1 mt-3 bg-gray-500"></div>
+        <div class="grid grid-cols-3">
+          <div>
+            <div class="relative">
+              <img src="" alt="special event">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+       </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
